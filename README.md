@@ -6,7 +6,7 @@ Modular status bar for dwm written in c.
 ```
 
 $ git clone https://github.com/IHatePineapples/dwmblocks
-$ cd dwm && sudo make install
+$ cd dwmblocks && sudo make install
 $ dwmblocks &
 ```
 
@@ -14,3 +14,11 @@ $ dwmblocks &
 
 Modify the `blocks.h` file. Copy your configuration to `blocks.def.h`.
 
+Recompile and replace the previous install:
+```
+$ sudo make clean install
+```
+To see the changes without rebooting the machine:
+```
+$ pkill dwmblocks && dwmblocks
+```
