@@ -4,7 +4,7 @@ static const Block blocks[] = {
 //	{"", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	30,		0},
 
 	{" ", "",		60,		0},
-	{"BAT ", "acpi -b | awk '/^Battery/ { print $5 }' | sed 's/,$/\ /' ",		60,		0},
+	{"BAT ", "acpi -b | awk '/^Battery/ { print $4}' | sed 's/,$/\ /' ",		60,		0},
     {"", "free -h | awk '/^Mem/ { print $4 }'",        10,     0},   
     {"", "free -h | awk '/^Mem/ { print $3 }'",        10,     0},    
     {"", "date +'%Y-%m-%d %H:%M:%S'",					5,		0},
